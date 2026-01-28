@@ -1,13 +1,14 @@
 
-:root { --neon: #39FF14; --black: #000000; }
-body { background: var(--black); color: white; min-height: 100vh; display: flex; flex-direction: column; margin: 0; }
+:root { --neon: #39FF14; --bg-color: #000000; --text-color: #ffffff; --nav-bg: #111111; --header-bg: #000000;}
+.light-mode {--bg-color: #ffffff; --text-color: #333333;--neon:  #2eb817;--header-bg: #f4f4f4; --nav-bg: #f4f4f4;}
+body { background: var(--bg-color);  color: var(--text-color); min-height: 100vh; display: flex; flex-direction: column; margin: 0; transition: background-color 0.3s, color 0.3s;}
         
-header { border-bottom: 4px solid var(--neon); padding: 20px; text-align: center; }
-footer { border-top: 4px solid var(--neon); padding: 20px; text-align: center; margin-top: auto; }
+header { border-bottom: 4px solid var(--neon); padding: 20px; text-align: center; background: var(--header-bg); }
+footer { border-top: 4px solid var(--neon); padding: 20px; text-align: center; margin-top: auto; background: var(--header-bg); }
 
 .wrapper { display: flex; flex-grow: 1; }
 
-nav { background: #111; padding: 15px; flex-shrink: 0; }
+nav { background: var(--nav-bg); padding: 15px; flex-shrink: 0; transition: background-color 0.3s; }
 
 @media (min-width: 992px) {
     .wrapper { flex-direction: row; }
@@ -36,8 +37,15 @@ main {
     margin: 0 auto;  
 }
 
-.nav-link { color: white !important; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+.nav-link { color: var(--text-color); font-weight: bold; text-transform: uppercase; text-decoration: none; }
 .nav-link:hover { color: var(--neon) !important; text-shadow: 0 0 10px var(--neon); }
 .nav-link:active { transform: scale(0.8); opacity: 0.8;}
 .nav-link.active { color: var(--neon) !important;}
 h1, h2 { color: var(--neon); font-weight: 900; text-transform: uppercase; }
+
+
+button {background: transparent; color: var(--neon); border: 2px solid var(--neon); padding: 10px 20px; font-weight: bold; text-transform: uppercase; cursor: pointer; position: relative; clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0); transition: all 0.3s;}
+
+button:hover {background: var(--neon); color: var(--bg-color); box-shadow: 0 0 15px var(--neon);}
+
+button:active {transform: scale(0.95); filter: brightness(0.8);}
