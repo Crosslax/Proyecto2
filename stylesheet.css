@@ -29,7 +29,8 @@ nav { background: var(--nav-bg); padding: 15px; flex-shrink: 0; transition: back
 
 main { 
     flex-grow: 1; 
-    padding: 50px; 
+    padding: 50px;
+    padding-top: 20px; 
 }
 
 .main-container {
