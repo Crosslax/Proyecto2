@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://crosslax.github.io/Proyecto2/sitemap.xml
