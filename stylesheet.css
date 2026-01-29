@@ -51,6 +51,7 @@ main {
     flex-grow: 1; 
     padding: 50px;
     padding-top: 20px; 
+    text-align: left;
 }
 
 .main-container {
