@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400; /* Normal para lectura */
   line-height: 1.6;
   background: var(--bg-color);
