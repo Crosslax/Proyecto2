@@ -21,10 +21,16 @@
 
       <div class="wrapper">
         <nav>
-          <ul class="nav-items-container">
-            <li><a href="#" class="nav-link active">Inicio</a></li>
-            <li><a href="musica.html" class="nav-link">Música</a></li>
-            <li><a href="tour.html" class="nav-link">Tour</a></li>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" aria-current="page" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="musica.html" class="nav-link">Música</a>
+            </li>
+            <li class="nav-item">
+              <a href="tour.html" class="nav-link">Tour</a>
+            </li>
           </ul>
         </nav>
 
@@ -66,7 +72,12 @@
       </div>
 
       <footer class="pb-5 d-flex justify-content-center">
-        <button id="theme-toggle">Alternar Modo</button>
+        <button
+          id="theme-toggle"
+          aria-label="Cambiar entre modo claro y oscuro"
+        >
+          Alternar Modo
+        </button>
       </footer>
     </div>
 
